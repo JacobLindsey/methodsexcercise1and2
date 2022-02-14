@@ -1,0 +1,61 @@
+﻿using System;
+
+namespace methodsexcercise
+{
+    class Program
+    {
+        // Excercise 2 Math Problem
+      
+        public static int Problem1(int num1, int num2)
+        {
+            var answer = num1 + num2;
+            return answer;
+        }
+        public static int Problem2 (int num1, int num2, int num3)
+        {
+            var answer = num1 + num2 + num3;
+            return answer;
+        }
+        public static int Problem3 (int num1, int num2, int num3, int num4, int num5)
+        {
+            var answer = num1 + num2 + num3 + num4 + num5;
+            return answer;
+        }
+        static void Main(string[] args)
+        {
+            var questionOne = Problem1 (2, 4);
+            var questionTwo = Problem2 (2, 4, 6);
+            var questionThree = Problem3 (1, 1, 1, 1, 1);
+            Console.WriteLine($"Math Answers {questionOne},{questionTwo},{questionThree}");
+
+            //Excercise 1
+            ////Name: Michael
+            ////Favorite Color: Blue
+            ////Favorite Animal: Walrus
+            ////Favorite Band: The Beatles
+
+            Console.WriteLine("Hello, What is your first name?");
+            var userName = Console.ReadLine();
+
+            Console.WriteLine($"Hi, {userName}! What is your favorite color?");
+            var color = Console.ReadLine();
+
+            Console.WriteLine($"{color} is an awesome color! What is your favorite animal?");
+            var animal = Console.ReadLine();
+
+            Console.WriteLine("Great! What is your favorite band?");
+            var band = Console.ReadLine();
+
+            Console.WriteLine($"Thank you for your time, {userName}! Here is your profile with a story!");
+            Console.WriteLine("-----------------------");
+
+            Console.WriteLine($"Name: {userName}");
+            Console.WriteLine($"favorite color: {color}");
+            Console.WriteLine($"favorite animal: {animal}");
+            Console.WriteLine($"favorite band: {band}");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine($"{userName} loves to spend time with their favorite animal which is a {animal}! {userName} loves to wear their favorite {color} and listen to their favorite music from {band}, especially their greatest hits!");
+
+        }
+    }
+}
